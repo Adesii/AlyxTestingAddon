@@ -1,0 +1,675 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc28:version{fb63b6ca-f435-4aa0-a2c7-c66ddc651dca} -->
+{
+	rootNode = 
+	{
+		_class = "RootNode"
+		children = 
+		[
+			{
+				_class = "AnimConstraintList"
+				children = 
+				[
+					{
+						_class = "AnimConstraintTwist"
+						name = "Test_AnimConstraintTwist"
+						children = 
+						[
+							{
+								_class = "AnimConstraintSlave"
+								name = "Test_AnimConstraintSlave"
+								parent_bone = ""
+								relative_origin = [ 0.0, 0.0, 0.0 ]
+								relative_angles = [ 0.0, 0.0, 0.0 ]
+								weight = 1.0
+							},
+							{
+								_class = "AnimConstraintAttachmentInput"
+								name = "Test_AnimConstraintAttachmentInput"
+								parent_attachment = ""
+								relative_origin = [ 0.0, 0.0, 0.0 ]
+								relative_angles = [ 0.0, 0.0, 0.0 ]
+								weight = 1.0
+							},
+						]
+						inverse = false
+						parent_bind_rotation = [ 0.0, 0.0, 0.0 ]
+						child_bind_rotation = [ 0.0, 0.0, 0.0 ]
+						up_vector = [ 0.0, 0.0, 1.0 ]
+					},
+					{
+						_class = "AnimConstraintTiltTwist"
+						name = "Test_AnimConstraintTiltTwist"
+						input_axis = 0
+						slave_axis = 0
+					},
+					{
+						_class = "AnimConstraintPoseSpaceMorph"
+						name = "Test_AnimConstraintPoseSpaceMorph"
+						m_sBoneName = ""
+						m_sAttachmentName = ""
+						m_outputMorph = [  ]
+						m_inputList = [  ]
+						m_bClamp = false
+						m_eRbfType = 0
+						m_flFalloff = 1.0
+					},
+					{
+						_class = "AnimConstraintPoseSpaceBone"
+						name = "Test_AnimConstraintPoseSpaceBone"
+						m_name = ""
+						m_vUpVector = [ 0.0, 0.0, 0.0 ]
+						m_slaves = [  ]
+						m_targets = [  ]
+						m_inputList = [  ]
+						m_eRbfType = 0
+						m_flFalloff = 1.0
+					},
+					{
+						_class = "AnimConstraintPoint"
+						name = "Test_AnimConstraintPoint"
+					},
+					{
+						_class = "AnimConstraintParent"
+						name = "Test_AnimConstraintParent"
+						constrained_bone = ""
+						weight = 1.0
+						translation_offset = [ 0.0, 0.0, 0.0 ]
+						rotation_offset_xyz = [ 0.0, 0.0, 0.0 ]
+					},
+					{
+						_class = "AnimConstraintOrient"
+						name = "Test_AnimConstraintOrient"
+					},
+					{
+						_class = "AnimConstraintMorph"
+						name = "Test_AnimConstraintMorph"
+						target_morph_control = ""
+						slave_channel = 0
+						min_value = 0.0
+						max_value = 1.0
+					},
+					{
+						_class = "AnimConstraintAim"
+						name = "Test_AnimConstraintAim"
+						aim_offset = [ 0.0, 0.0, 0.0 ]
+						up_type = 0
+						up_vector = [ 0.0, 0.0, 1.0 ]
+					},
+				]
+			},
+			{
+				_class = "IKData"
+				children = 
+				[
+					{
+						_class = "IKRigSimple"
+						name = "Test_IKRigSimple"
+						initial_master_blend_amount = 1.0
+						abs_origin_drop_height = 24.0
+						abs_origin_drop_height_spring_strength = 500.0
+						default_tilt_spring_strength = 5.0
+						tilt_bone = ""
+						animgraph_master_blend_parameter_name = ""
+						system = "IKSYSTEMTYPE_Animgraph"
+					},
+					{
+						_class = "IKRigBug"
+						name = "Test_IKRigBug"
+						initial_master_blend_amount = 1.0
+						abs_origin_drop_height = 24.0
+						abs_origin_drop_height_spring_strength = 500.0
+						default_tilt_spring_strength = 5.0
+						tilt_bone = ""
+						animgraph_master_blend_parameter_name = ""
+						system = "IKSYSTEMTYPE_Animgraph"
+					},
+					{
+						_class = "IKRigBiped"
+						name = "Test_IKRigBiped"
+						initial_master_blend_amount = 1.0
+						abs_origin_drop_height = 24.0
+						abs_origin_drop_height_spring_strength = 500.0
+						default_tilt_spring_strength = 5.0
+						tilt_bone = ""
+						animgraph_master_blend_parameter_name = ""
+						system = "IKSYSTEMTYPE_Animgraph"
+					},
+				]
+			},
+			{
+				_class = "DynamicConfigList"
+				children = 
+				[
+					{
+						_class = "DynamicConfig"
+						name = "Test_DynamicConfig"
+						children = 
+						[
+							{
+								_class = "EditorDynamicConfig"
+								name = "Test_EditorDynamicConfig"
+								children = 
+								[
+									{
+										_class = "ConfigGroup"
+										name = "Test_ConfigGroup"
+									},
+									{
+										_class = "ConfigCommand"
+										name = "Test_ConfigCommand"
+										command = ""
+										args = ""
+									},
+									{
+										_class = "ConfigSetBodygroup"
+										name = "Test_ConfigSetBodygroup"
+										group_name = ""
+										choice = 0
+									},
+									{
+										_class = "ConfigRandomColor"
+										name = "Test_ConfigRandomColor"
+										gradient = 
+										{
+											m_Stops = [  ]
+										}
+									},
+									{
+										_class = "ConfigSetRenderColor"
+										name = "Test_ConfigSetRenderColor"
+										color = [ 255, 255, 255, 255 ]
+									},
+									{
+										_class = "ConfigSetMaterialGroup"
+										name = "Test_ConfigSetMaterialGroup"
+										material_group = ""
+									},
+									{
+										_class = "ConfigAttachedModel"
+										name = "Test_ConfigAttachedModel"
+										model_name = ""
+										entity_class = ""
+										attachment_type = "root"
+										attach_point = ""
+										use_additional_offset = false
+										relative_origin = [ 0.0, 0.0, 0.0 ]
+										relative_angles = [ 0.0, 0.0, 0.0 ]
+										user_specified_color = false
+										user_specified_materialgroup = false
+										accept_parent_materialdriven_decals = false
+									},
+									{
+										_class = "ConfigRandomPick"
+										name = "Test_ConfigRandomPick"
+									},
+									{
+										_class = "ConfigUserPick"
+										name = "Test_ConfigUserPick"
+									},
+								]
+							},
+						]
+					},
+				]
+			},
+			{
+				_class = "ModelDataList"
+				children = 
+				[
+					{
+						_class = "Bounds Hull"
+						name = "Test_Bounds_Hull"
+						mins = [ -1.0, -1.0, 0.0 ]
+						maxs = [ 1.0, 1.0, 1.0 ]
+					},
+					{
+						_class = "Bounds View"
+						name = "Test_Bounds_View"
+						mins = [ -1.0, -1.0, 0.0 ]
+						maxs = [ 1.0, 1.0, 1.0 ]
+					},
+				]
+			},
+			{
+				_class = "Softbody"
+				children = 
+				[
+					{
+						_class = "ClothCollisionGroup"
+						name = "Test_ClothCollisionGroup"
+						children = 
+						[
+							{
+								_class = "ClothShapeSphere"
+								name = "Test_ClothShapeSphere"
+								parent_bone = ""
+								cloth_collision_layer0 = true
+								cloth_collision_layer1 = true
+								cloth_collision_layer2 = true
+								cloth_collision_layer3 = true
+								cloth_stickiness = 0.0
+								cloth_collision_priority = 0
+								radius = 1.0
+								center = [ 0.0, 0.0, 0.0 ]
+							},
+						]
+					},
+				]
+				stiffness_on_ragdoll = 0.0
+				cloth_sleep_enabled = false
+			},
+			{
+				_class = "ClothProxyMeshList"
+				children = 
+				[
+					{
+						_class = "ClothParams"
+						name = "Test_ClothParams"
+						default_stretch = 0.0
+						additional_shear_stretch = 0.0
+						extra_iterations = 0
+						extra_goal_iterations = 0
+						extra_pressure_iterations = 0
+						goal_strength_bias = 0.0
+						default_gravity_scale = 1.0
+						default_vel_air_drag = 0.0
+						default_exp_air_drag = 0.0
+						velocity_smooth_rate = 0.0
+						internal_pressure = 0.0
+						windage = 0.0
+						wind_drag = 0.0
+						velocity_smooth_iterations = 0
+						default_ground_friction = 0.0
+						default_world_collision_penetration = 0.0
+						add_world_collision_radius = 2.0
+						local_force = 1.0
+						local_rotation = 0.0
+						volumetric_solve_amount = 0.0
+						add_curvature = 0.0
+						quad_bend_tolerance = 0.05
+						follow_the_lead = false
+						use_per_node_local_force_and_rotation = false
+						uninertial_rods = false
+						explicit_masses = false
+						unitless_damping = true
+						force_world_collision_on_all_nodes = false
+						new_style = true
+						can_collide_with_world_hulls = false
+						can_collide_with_world_meshes = false
+						can_collide_with_world_capsule_and_spheres = false
+						add_stiffness_rods = true
+						rigid_edge_hinges = false
+						soft_skin_animation = false
+						add_bend_only_rods = false
+						immovable = false
+					},
+				]
+			},
+			{
+				_class = "MorphControlList"
+				children = 
+				[
+					{
+						_class = "MorphControl"
+						name = "Test_MorphControl"
+						stereo = false
+						min_value = 0.0
+						max_value = 0.0
+					},
+				]
+			},
+			{
+				_class = "WeightListList"
+				children = 
+				[
+					{
+						_class = "WeightList"
+						name = "Test_WeightList"
+						default_weight = 0.0
+						weights = [  ]
+						master_morph_weight = -1.0
+						morph_weights = [  ]
+					},
+				]
+			},
+			{
+				_class = "Skeleton"
+				children = 
+				[
+					{
+						_class = "Bone"
+						name = "Test_Bone"
+						children = 
+						[
+							{
+								_class = "DriverBone"
+								name = "Test_DriverBone"
+								origin = [ 0.0, 0.0, 0.0 ]
+								angles = [ 0.0, 0.0, 0.0 ]
+							},
+						]
+						origin = [ 0.0, 0.0, 0.0 ]
+						angles = [ 0.0, 0.0, 0.0 ]
+					},
+				]
+			},
+			{
+				_class = "LODGroupList"
+				children = 
+				[
+					{
+						_class = "LODGroupAll"
+						name = "Test_LODGroupAll"
+						meshes = [  ]
+					},
+					{
+						_class = "LODGroup"
+						name = "Test_LODGroup"
+						switch_threshold = 0.0
+						meshes = [  ]
+					},
+				]
+			},
+			{
+				_class = "BodyGroupList"
+				children = 
+				[
+					{
+						_class = "BodyGroup"
+						name = "Test_BodyGroup"
+						children = 
+						[
+							{
+								_class = "BodyGroupChoice"
+								name = "Test_BodyGroupChoice"
+								meshes = [  ]
+							},
+						]
+						hidden_in_tools = false
+					},
+				]
+			},
+			{
+				_class = "MaterialGroupList"
+				children = 
+				[
+					{
+						_class = "DefaultMaterialGroup"
+						name = "Test_DefaultMaterialGroup"
+						remaps = [  ]
+						use_global_default = false
+						global_default_material = ""
+					},
+					{
+						_class = "MaterialGroup"
+						name = "Test_MaterialGroup"
+						remaps = [  ]
+					},
+				]
+			},
+			{
+				_class = "PhysicsBodyMarkupList"
+				children = 
+				[
+					{
+						_class = "PhysicsBodyMarkup"
+						name = "Test_PhysicsBodyMarkup"
+						target_body = ""
+						mass_override = 0.0
+						inertia_scale = 1.0
+						linear_damping = 0.0
+						angular_damping = 0.0
+						use_mass_center_override = false
+						mass_center_override = [ 0.0, 0.0, 0.0 ]
+					},
+				]
+			},
+			{
+				_class = "PhysicsJointList"
+				children = 
+				[
+					{
+						_class = "PhysicsJointWeld"
+						name = "Test_PhysicsJointWeld"
+						parent_body = ""
+						child_body = ""
+						anchor_origin = [ 0.0, 0.0, 0.0 ]
+						anchor_angles = [ 0.0, 0.0, 0.0 ]
+						collision_enabled = false
+						linear_freqeuncy = 0.0
+						linear_damping_ratio = 0.0
+						max_force = 0.0
+						angular_frequency = 0.0
+						angular_damping_ratio = 0.0
+						max_torque = 0.0
+					},
+					{
+						_class = "PhysicsJointSpherical"
+						name = "Test_PhysicsJointSpherical"
+						parent_body = ""
+						child_body = ""
+						anchor_origin = [ 0.0, 0.0, 0.0 ]
+						anchor_angles = [ 0.0, 0.0, 0.0 ]
+						collision_enabled = false
+					},
+					{
+						_class = "PhysicsJointPrismatic"
+						name = "Test_PhysicsJointPrismatic"
+						parent_body = ""
+						child_body = ""
+						anchor_origin = [ 0.0, 0.0, 0.0 ]
+						anchor_angles = [ 0.0, 0.0, 0.0 ]
+						collision_enabled = false
+						friction = 0.0
+						enable_limit = false
+						min_offset = 0.0
+						max_offset = 0.0
+					},
+					{
+						_class = "PhysicsJointNull"
+						name = "Test_PhysicsJointNull"
+						parent_body = ""
+						child_body = ""
+						anchor_origin = [ 0.0, 0.0, 0.0 ]
+						anchor_angles = [ 0.0, 0.0, 0.0 ]
+						collision_enabled = false
+					},
+					{
+						_class = "PhysicsJointRevolute"
+						name = "Test_PhysicsJointRevolute"
+						parent_body = ""
+						child_body = ""
+						anchor_origin = [ 0.0, 0.0, 0.0 ]
+						anchor_angles = [ 0.0, 0.0, 0.0 ]
+						collision_enabled = false
+						friction = 0.0
+						enable_limit = false
+						min_angle = 0.0
+						max_angle = 0.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						name = "Test_PhysicsJointConical"
+						parent_body = ""
+						child_body = ""
+						anchor_origin = [ 0.0, 0.0, 0.0 ]
+						anchor_angles = [ 0.0, 0.0, 0.0 ]
+						collision_enabled = false
+						friction = 0.0
+						enable_swing_limit = false
+						swing_limit = 0.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = false
+						min_twist_angle = 0.0
+						max_twist_angle = 0.0
+					},
+				]
+			},
+			{
+				_class = "AttachmentList"
+				children = 
+				[
+					{
+						_class = "Attachment"
+						name = "Test_Attachment"
+						children = 
+						[
+							{
+								_class = "AttachmentInfluence"
+								name = "Test_AttachmentInfluence"
+								parent_bone = ""
+								relative_origin = [ 0.0, 0.0, 0.0 ]
+								relative_angles = [ 0.0, 0.0, 0.0 ]
+								weight = 1.0
+							},
+						]
+						parent_bone = ""
+						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+				]
+			},
+			{
+				_class = "HitboxSetList"
+				children = 
+				[
+					{
+						_class = "HitboxSet"
+						name = "Test_HitboxSet"
+						children = 
+						[
+							{
+								_class = "Hitbox"
+								name = "Test_Hitbox"
+								parent_bone = ""
+								hitbox_mins = [ -1.0, -1.0, -1.0 ]
+								hitbox_maxs = [ 1.0, 1.0, 1.0 ]
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+							},
+						]
+					},
+				]
+			},
+			{
+				_class = "AnimationList"
+				children = 
+				[
+					{
+						_class = "AnimBindPose"
+						name = "Test_AnimBindPose"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						frame_count = 1
+						frame_rate = 30
+					},
+					{
+						_class = "EmptyAnim"
+						name = "Test_EmptyAnim"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						frame_count = 1
+						frame_rate = 30
+					},
+					{
+						_class = "2DBlend"
+						name = "Test_2DBlend"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						row_pose_param_name = ""
+						col_pose_param_name = ""
+						row_weight_list = [  ]
+						col_weight_list = [  ]
+						blend_anim_list = [  ]
+					},
+					{
+						_class = "1DBlend"
+						name = "Test_1DBlend"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						poseParam = ""
+						blendList = [  ]
+					},
+					{
+						_class = "AnimFile"
+						name = "Test_AnimFile"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/testing/door/anims/dooropen.dmx"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "Anim"
+						name = "Test_Anim"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+					},
+				]
+				default_root_bone_name = ""
+			},
+		]
+		model_archetype = ""
+		primary_associated_entity = ""
+		anim_graph_name = ""
+	}
+}

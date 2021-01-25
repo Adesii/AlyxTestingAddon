@@ -1,0 +1,190 @@
+@define textBase:			#00c0ffff;
+@define textLight:			#3dfdfcff;
+@define textDim:			#2dedfa99;
+@define textError:			#ec1c23ff;
+
+@define panelBackground:	#11353F10;
+@define panelCraftingStationForeground:	#15485710;
+@define panelForeground:	#154857cc;
+
+@define buttonDefault:		#11353Fff;
+@define buttonHover:		#00C0FFB3;
+@define buttonActive:		#00a4daff;
+@define buttonInactive:		#00C0FF36;
+
+@define paneLeftWidth:			770px;
+// below should be 15 less
+@define paneLeftWidthInner:		755px;
+// below should be 15 more
+@define paneLeftWidthBuffed:	785px;
+
+@define paneMainWidth:		1235px;
+
+@define paneRightWidth:		420px;
+
+@define barTopHeight:		65px;
+@define barMiddleHeight:	526px;
+@define barBottomHeight:	115px;
+@define barMarginVertical:	10px;
+
+@define barLeftWidth:	20px;
+@define mainMarginLeft:	18px;
+@define paddingRight:	25px;
+
+
+.TextContainer
+{
+	width: 100%;
+	height: 100%;
+
+	margin: 0px;
+	border: 0px;
+    font-size: 100px;
+	font-family: Dota Hypatia Bold;
+	
+	font-weight: semi-bold;
+    color: rgb(132, 243, 132);
+    opacity-mask: url("s2r://panorama/images/game_menu_ui/menu_type_mask_psd.vtex");
+    
+}
+#paneltext{
+    height: 0px;
+    opacity: 0;
+    width: 0px;
+    transition-property: width,height,opacity;
+    transition-duration: 1s;
+}
+.TextLine
+{
+	horizontal-align: center;
+	vertical-align: center;
+	flow-children: down;
+
+	opacity: 0;
+	
+    transition-property: opacity; 
+    transition-duration: .5s; 
+    
+}
+.TextBox
+{
+	horizontal-align: center;
+	vertical-align: center;
+	flow-children: right;
+    text-align: center;
+    text-overflow: shrink;
+    border-radius: 10%;
+}
+.TextBox Label
+{
+	horizontal-align: center;
+	vertical-align: center;
+	flow-children: right;
+    text-align: center;
+}
+
+.showtext #paneltext
+{
+    opacity: 1;
+    height: 40%;
+    width: 100%;
+    transition-property: width,height,opacity;
+    animation-name: AnimateChevron;
+    transition-duration: 1s;
+    
+}
+.hidetext #paneltext
+{
+    opacity: 0;
+    height: 0px;
+    width: 0px;
+    transition-property: width,height,opacity;
+    transition-duration: 1s;
+}
+
+#shop{
+    color: rgb(191, 235, 235);
+    opacity: 0;
+    
+    animation-name: AnimateChevron;
+    transition-property: opacity;
+    transition-duration: 2s;
+    animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes 'AnimateChevron'
+{
+	0%
+	{
+		opacity: 0;
+	}
+	20%
+	{
+		opacity: 1;
+	}
+	50%
+	{
+		opacity: 0.4;
+	}
+	80%
+	{
+		opacity: 0.7;
+	}
+	90%
+	{
+		opacity: 0;
+	}
+	100%
+	{
+		opacity: 1;
+	}
+}
+.showshop #shop{
+    opacity: 1;
+    animation-name: AnimateChevron;
+    transition-property: opacity;
+    transition-duration: 2s;
+    animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+.hideshop #shop{
+    opacity: 0;
+    animation-name: AnimateChevron;
+    transition-property: opacity;
+    transition-duration: 0.1s;
+    animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+.buybutton{
+    height: 100px;
+    width: 230px;
+    position: 54% 20px 0px;
+    background-color: green;
+}
+.sufficent .buybutton{
+    height: 100px;
+    width: 500px;
+}
+
+
+.buttonselect{
+    
+    background-color: buttonActive;
+    color: buttonDefault;
+    font-size: 50px;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    transition-property: background-color;
+    transition-duration: .38s;
+    transition-timing-function: cubic-bezier( 0.785, 0.385, 0.555, 1.505 );
+    z-index: 1;
+}
+.buttons{
+    horizontal-align: center;
+	vertical-align: center;
+    flow-children: right;
+    text-align: center;
+    
+}

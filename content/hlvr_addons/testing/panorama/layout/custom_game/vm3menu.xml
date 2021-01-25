@@ -1,0 +1,126 @@
+<!--
+  XML created by Nicholas 'Viridian' Nakano.
+-->
+
+<root>
+	<scripts>
+		<include src="file://{resources}/scripts/custom_game/vm3menu.js" />
+	</scripts>
+	<styles>
+		<include src="s2r://panorama/styles/base_styles.vcss_c" />
+		<include src="file://{resources}/styles/custom_game/vm3menu.css" />
+	</styles>
+
+<ClientUIDialogPanel class="RootPanel">
+	<Panel class="MenuPanel">
+		<Panel class="LeftBar"/>
+		<Panel id="wrapperID" class="wrapper">
+
+			<Panel class="Row Top">
+				<Panel class="HeadingBar" id="TopHeading">
+					<Label text="WELCOME TO VAULTMAPS"/>
+				</Panel>
+				<Panel class="LogoBar">
+					<Image src="s2r://panorama/images/upgrade_station_ui/combine_logo_psd.vtex" id="Logo"/>
+				</Panel>
+			</Panel>
+
+			<Panel class="Row Middle">
+
+				<Panel class="LevelList">
+					<Panel class="HeadingBar" id="MapsHeading">
+						<Label text="ENTRIES"/>
+					</Panel>
+					<Panel class="ScrollMenu" id="MapList">
+
+					</Panel>
+					<Panel class="MapPageWrapper">
+						<Button id="BackPageButton" onmouseover="HoverSound()" onactivate="BackPage()">
+							<Label text="A"/>
+						</Button>
+						<Button id="NextPageButton" onmouseover="HoverSound()" onactivate="NextPage()">
+							<Label text="B"/>
+						</Button>
+					</Panel>
+				</Panel>
+
+				<Panel class="DividerLine">
+				</Panel>
+
+				<Panel class="SelectedLevelMenu">
+					<Panel class="HeadingBar" id="SelectedHeading">
+						<Label text="ENTRY INFO"/>
+					</Panel>
+					<Panel class="InfoPanel">
+						<Panel class="Thumbnail">
+							<Image id="ThumbnailImage" src="" scaling="stretch-to-cover-preserve-aspect"/>
+							<Image id="bkgd-image" src="file://{resources}/images/custom_game/vaultmapslogotransparent.png" scaling="stretch-to-cover-preserve-aspect"/>
+							<Label id="bkgd-text" text="Select a Map to Get Started"/>
+						</Panel>
+						<Panel class="MapInfo">
+							<Label id="TitleBox" class="Title" text=""/>
+							<Label id="AuthorBox" class="Author" text=""/>
+							<Label id="DescriptionBox" class="Description" text=""/>
+						</Panel>
+					</Panel>
+				</Panel>
+
+			</Panel>
+
+			<Panel class="Row Bottom">
+
+				<Button class="CreditsButton" onmouseover="HoverSound()" onactivate="CreditsShow()">
+					<Label text="Credits"/>
+				</Button>
+
+				<Panel class="PlayMessageWrapper">
+					<Button onmouseover="HoverSound()" onactivate="SetMap()">
+						<Label id="PlayMessage" text="Press to Play Selected Map"/>
+					</Button>
+				</Panel>
+
+			</Panel>
+
+		</Panel>
+		<Panel id="CreditsWrapperID" class="CreditsWrapper wrapper">
+			<Panel class="CreditsPanel">
+				<Panel class="CreditsHeading">
+					<Label text="Credits"/>
+				</Panel>
+				<Panel class="LobbyContributers">
+					<Panel class="Heading">
+						<Label text="Lobby Creators"/>
+					</Panel>
+					<Label text="Spikehunter"/>
+					<Label text="Paradox"/>
+					<Label text="Higgue"/>
+				</Panel>
+				<Panel class="MenuContributers">
+					<Panel class="Heading">
+						<Label text="Panorama Menu Creators"/>
+					</Panel>
+					<Label text="Nicholas 'Viridian' Nakano"/>
+				</Panel>
+				<Panel class="Judges">
+					<Panel class="Heading">
+						<Label text="Competition Judges"/>
+					</Panel>
+					<Label text="SadlyItsBradley"/>
+					<Label text="Spikehunter"/>
+					<Label text="Paradox"/>
+					<Label text="Higgue"/>
+				</Panel>
+				<Panel class="ConsolationPrize">
+					<Label text="Thank you to everyone who participated!"/>
+				</Panel>
+			</Panel>
+			<Panel class="CreditsButtonWrapper">
+				<Button onmouseover="HoverSound()" class="CreditsButton" onactivate="CreditsShow()">
+					<Label text="Menu"/>
+				</Button>
+			</Panel>
+
+		</Panel>
+	</Panel>
+</ClientUIDialogPanel>
+</root>

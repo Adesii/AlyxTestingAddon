@@ -1,0 +1,54 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc28:version{fb63b6ca-f435-4aa0-a2c7-c66ddc651dca} -->
+{
+	rootNode = 
+	{
+		_class = "RootNode"
+		children = 
+		[
+			{
+				_class = "RenderMeshList"
+				children = 
+				[
+					{
+						_class = "RenderMeshFile"
+						filename = "models\\dmx\\mesh\\barseat_straight.dmx"
+						import_scale = 1.0
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+				]
+			},
+			{
+				_class = "PhysicsShapeList"
+				children = 
+				[
+					{
+						_class = "PhysicsShapeBox"
+						parent_bone = ""
+						surface_prop = "default"
+						collision_prop = "default"
+						origin = [ 16.536701, 0.125626, -14.496537 ]
+						angles = [ 0.0, 0.0, 0.0 ]
+						dimensions = [ 65.357162, 40.276535, 18.128977 ]
+					},
+					{
+						_class = "PhysicsShapeBox"
+						name = "_copy"
+						parent_bone = ""
+						surface_prop = "default"
+						collision_prop = "default"
+						origin = [ 16.536701, -13.861963, 8.173696 ]
+						angles = [ 0.0, 0.0, 0.0 ]
+						dimensions = [ 65.357162, 12.301356, 31.750204 ]
+					},
+				]
+			},
+		]
+		model_archetype = ""
+		primary_associated_entity = ""
+		anim_graph_name = ""
+	}
+}

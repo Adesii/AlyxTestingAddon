@@ -1,0 +1,136 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc28:version{fb63b6ca-f435-4aa0-a2c7-c66ddc651dca} -->
+{
+	rootNode = 
+	{
+		_class = "RootNode"
+		children = 
+		[
+			{
+				_class = "RenderMeshList"
+				children = 
+				[
+					{
+						_class = "RenderMeshFile"
+						filename = "models/hello/quentin.dmx"
+						import_scale = 1.0
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+				]
+			},
+			{
+				_class = "Softbody"
+				children = 
+				[
+					{
+						_class = "ClothNode"
+						name = "jacket_cut_R_001_clothNode"
+						origin = [ 0.0, 0.0, 0.0 ]
+						angles = [ 0.0, 0.0, 0.0 ]
+						cloth_node_root_bone = "jacket_cut_R_001"
+						has_stray_radius = false
+						has_world_collision = false
+						cloth_collision_layer0 = true
+						cloth_collision_layer1 = true
+						cloth_collision_layer2 = true
+						cloth_collision_layer3 = true
+						transform_alignment = 0
+						gravity_z = 1.0
+						goal_strength = 0.05
+						goal_damping = 0.3
+						mass = 1.0
+						friction = 0.0
+						stray_radius = 0.0
+						stray_radius_relaxation_factor = 1.0
+						collision_radius = 0.0
+						is_static_node = true
+						allow_rotation = false
+						super_damping = 0.0
+					},
+					{
+						_class = "ClothNode"
+						name = "jacket_cut_R_002_clothNode"
+						origin = [ 0.0, 0.0, 0.0 ]
+						angles = [ 0.0, 0.0, 0.0 ]
+						cloth_node_root_bone = "jacket_cut_R_002"
+						has_stray_radius = false
+						has_world_collision = false
+						cloth_collision_layer0 = true
+						cloth_collision_layer1 = true
+						cloth_collision_layer2 = true
+						cloth_collision_layer3 = true
+						transform_alignment = 0
+						gravity_z = 1.0
+						goal_strength = 0.5
+						goal_damping = 0.5
+						mass = 1.0
+						friction = 0.0
+						stray_radius = 0.0
+						stray_radius_relaxation_factor = 1.0
+						collision_radius = 0.0
+						is_static_node = false
+						allow_rotation = false
+						super_damping = 0.0
+					},
+					{
+						_class = "ClothNode"
+						name = "jacket_cut_R_003_clothNode"
+						origin = [ 0.0, 0.0, 0.0 ]
+						angles = [ 0.0, 0.0, 0.0 ]
+						cloth_node_root_bone = "jacket_cut_R_003"
+						has_stray_radius = false
+						has_world_collision = false
+						cloth_collision_layer0 = true
+						cloth_collision_layer1 = true
+						cloth_collision_layer2 = true
+						cloth_collision_layer3 = true
+						transform_alignment = 0
+						gravity_z = 1.0
+						goal_strength = 0.5
+						goal_damping = 0.5
+						mass = 1.0
+						friction = 0.0
+						stray_radius = 0.0
+						stray_radius_relaxation_factor = 1.0
+						collision_radius = 0.0
+						is_static_node = false
+						allow_rotation = false
+						super_damping = 0.0
+					},
+					{
+						_class = "ClothSpring"
+						name = "jacket_cut_R_001_clothLink"
+						cloth_node_0 = "jacket_cut_R_001_clothNode"
+						cloth_node_1 = "jacket_cut_R_002_clothNode"
+						stiffness = 1.0
+						enable_advanced_parameters = false
+						is_length_explicit = false
+						min_length = 0.0
+						max_length = 0.0
+						extra_iterations = 0
+					},
+					{
+						_class = "ClothSpring"
+						name = "jacket_cut_R_002_clothLink"
+						cloth_node_0 = "jacket_cut_R_002_clothNode"
+						cloth_node_1 = "jacket_cut_R_003_clothNode"
+						stiffness = 1.0
+						enable_advanced_parameters = false
+						is_length_explicit = false
+						min_length = 0.0
+						max_length = 0.0
+						extra_iterations = 0
+					},
+				]
+				stiffness_on_ragdoll = 0.0
+				cloth_sleep_enabled = false
+			},
+		]
+		model_archetype = ""
+		primary_associated_entity = ""
+		anim_graph_name = ""
+	}
+}

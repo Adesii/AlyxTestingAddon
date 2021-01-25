@@ -1,0 +1,23 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "vr_projected_decals.vfx"
+
+	//---- Decal ----
+	F_BLEND_MODE 3 // Liquid
+
+	//---- Color ----
+	TextureColor "material/yellow_ball_clue.tga"
+
+	//---- Lighting ----
+	g_flGlossiness "0.500"
+
+	//---- Translucent ----
+	TextureTranslucency "[1.000000 1.000000 1.000000 0.000000]"
+
+	Attributes
+	{
+		translucent "1"
+	}
+}

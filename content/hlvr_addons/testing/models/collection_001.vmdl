@@ -1,0 +1,69 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc28:version{fb63b6ca-f435-4aa0-a2c7-c66ddc651dca} -->
+{
+	rootNode = 
+	{
+		_class = "RootNode"
+		children = 
+		[
+			{
+				_class = "RenderMeshList"
+				children = 
+				[
+					{
+						_class = "RenderMeshFile"
+						filename = "models/Collection.001.smd"
+						import_scale = 50.0
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+					{
+						_class = "RenderMeshFile"
+						filename = "models/Vort_shop_ascii.fbx"
+						import_scale = 1.0
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+				]
+			},
+			{
+				_class = "MaterialGroupList"
+				children = 
+				[
+					{
+						_class = "DefaultMaterialGroup"
+						remaps = 
+						[
+							{
+								from = "materials_models_props_hazmat_respirator_01_vmat.vmat"
+								to = "materials/models/props/hazmat/respirator_01.vmat"
+							},
+							{
+								from = "models_creatures_vortigaunt_materials_uncombined_vort_body_vmat.vmat"
+								to = "models/creatures/vortigaunt/materials/uncombined_vort_body.vmat"
+							},
+							{
+								from = "models_creatures_vortigaunt_materials_uncombined_vort_head_vmat.vmat"
+								to = "models/creatures/vortigaunt/materials/uncombined_vort_head.vmat"
+							},
+							{
+								from = "models_creatures_vortigaunt_materials_vort_eye_vmat.vmat"
+								to = "models/creatures/vortigaunt/materials/vort_eye.vmat"
+							},
+						]
+						use_global_default = false
+						global_default_material = ""
+					},
+				]
+			},
+		]
+		model_archetype = "generic_actor_model"
+		primary_associated_entity = "generic_actor"
+		anim_graph_name = "animgraphs/vortmeet.vanmgrph"
+	}
+}
